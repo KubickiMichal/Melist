@@ -1,0 +1,106 @@
+<!doctype html>
+<html land="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Welcome in MeList</title>
+        <link rel="stylesheet" type="text/css" href="melist.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>Welcome in MeList application</h1>
+        </header>
+
+        <menu>
+            <button class="addButton">add</button>
+        </menu>
+
+        <main>
+            
+            <section class="redTasks">
+        
+            </section>
+
+            <section class="yellowTasks">
+        
+            </section>
+                
+            <section  class="greenTasks">
+                
+             </section>
+        </main>
+
+        <footer>
+            <menu>
+                <button class="addButton">add</button>
+            </menu>
+        </footer>
+
+        <dialog id="addForm">
+            <form method="dialog">
+                <div class="addFormField">
+                    <span>Topic</span>
+                    <input name="topic" type="text" />
+                </div>
+
+                <div class="addFormField">
+                    <span>Priority</span>
+                    <select name="priority">
+                        <option value="RED">High</option>
+                        <option value="YELLOW">Medium</option>
+                        <option value="GREEN">Low</option>
+                    </select>
+                </div> 
+
+                <div class="addFormField">
+                    <span>Description</span>
+                    <textarea name="description" cols="30" rows="4"></textarea>
+                </div>   
+
+                <div class="addFormField">
+                    <span>Date</span>
+                    <input name="date" type="datetime-local" />
+                </div>
+            
+                <menu class="addFormMenu">
+                    <button value="CANCEL" type="button">cancel</button>
+                    <button value="SUBMIT" type="submit">add</button>
+                </menu>
+            </form>
+        </dialog>
+
+        <template id="newTask">
+            <article class="task">
+                <div class="taskHeader">
+                    <span class="taskStatus">x</span> 
+                    <span class="taskTitle" contenteditable="true">x</span>
+                    <span class="taskDate">x</span>
+                </div>
+
+                <div class="taskContent">
+                    <div class="taskDescription">
+                        x
+                    </div>
+
+                    <div class="taskControls">
+                        <div class="taskStatus">
+                            <button value="TODO">to do</button>
+                            <button value="IN_PROGRESS">in progress</button>
+                            <button value="DONE">done</button>
+                        </div>
+
+                        <div class="taskSave">
+                            <button class="delete">delete</button>
+                        </div>
+                    </div>
+                </div>
+
+            </article>
+          </template> 
+  
+        <script src="melist.js" type="text/javascript"></script>
+        
+    </body>
+
+</html>

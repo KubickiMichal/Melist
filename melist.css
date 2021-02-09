@@ -1,0 +1,94 @@
+header {
+    border: solid;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+main {
+    border: solid;
+    margin-bottom: 10px;
+}
+
+menu {
+    text-align: center;
+}
+
+.redTasks {
+    border: solid;
+    margin: 10px;
+    background-color: #f804046e;
+}
+
+.yellowTasks {
+    border: solid;
+    margin: 10px;
+    background-color: #ffff3085;
+}
+
+.greenTasks {
+    border: solid;
+    margin: 10px;
+    background-color: #52f45273
+}
+
+.task {
+    border: solid;
+    margin: 10px;
+}
+
+.taskContent {
+    display: flex;
+}
+
+.taskHeader {  
+    border-bottom: solid;
+    display: flex;
+    justify-content: space-around;
+}
+
+.taskDescription {
+    border-right: solid;
+    width: 70%;
+    padding: 10px;
+}
+
+.taskStatus {
+    display: flex;
+    justify-content: center;
+}
+
+.taskStatus button {
+    flex-grow: 1;
+}
+
+.taskControls {
+    width: 30%;
+    padding:10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.taskSave button {
+    width: 100%;
+}
+
+#addForm {
+    top: 50%;
+    width: 400px;
+}
+
+.addFormField {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    border-bottom: solid #4464ff;
+    padding-bottom: 4px;
+}
+
+.addFormMenu {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+}
